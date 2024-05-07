@@ -1,0 +1,14 @@
+[package]
+name = "foodchain"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+bson = { version = "2.10.0", features = ["chrono-0_4"] } # Needed for using chrono datetime in doc
+confy = "0.6.1"
+chrono = "0.4.38" # Used for setting DateTimes
+mongodb = "2.8.2"
+serde = { version = "1.0.200", features = ["derive"] }
+anyhow = "1.0.82"
+futures = "0.3.30"
